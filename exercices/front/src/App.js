@@ -1,7 +1,9 @@
 import "./App.css";
 import Axios from "axios";
 import React, { useEffect, useState } from "react";
+import "tailwindcss/tailwind.css";
 import Counter from "./Counter";
+// import Table from "./table";
 import './index.css';
 
 
@@ -75,6 +77,7 @@ function App() {
             <Counter />
            
           {/* </header> */}
+          {/* <Table /> */}
         </div>
       )}
     </>
