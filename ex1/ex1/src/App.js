@@ -3,11 +3,12 @@ import "./App.css";
 import Axios from "axios";
 import React, { useEffect, useState } from "react";
 import "tailwindcss/tailwind.css";
+import Test from './testCompo';
+
 
 function App() {
   const [words, setWords] = useState(false);
   const [wordsTimestamp, setWordsTimestamp] = useState(false);
-
   const source = Axios.CancelToken.source();
 
   useEffect(() => {
@@ -44,32 +45,29 @@ function App() {
   };
 
   console.log({ words });
-  console.log({ wordsTimestamp });
+  console.log(wordsTimestamp);
   return (
     <>
       {display() && (
         <div className="App">
           <header className="App-header">
             <div className="container mx-auto">
-            <p>
-              {words.length <= 0 ? (
-                <span class="mt-2 text-gray-500"> No data found ! </span>
-              ) : (
-                words.map((item) => {
-                  return  (item.Mot + " ");
-                })
-              )} </p>
+              <p>
+                {words.length <= 0 ? (
+                  <span class="mt-2 text-gray-500"> No data found ! </span>
+                ) : (
+                  words.map((line) => {
+                    return line.Mot + " ";
+                  })
+                )}
+              </p>
             </div>
             <div className="container mx-auto">
-            <p>
-              {wordsTimestamp.length <= 0 ? (
-                <span class="mt-2 text-gray-500"> No data found ! </span>
-              ) : (
-                wordsTimestamp.map((item) => {
-                  return  (item.Mot + " ");
-                })
-              )} </p>
+              <p>
+             Noms: {display.wordsTimestamp}
+              </p>
             </div>
+            <Test />
           </header>
         </div>
       )}
