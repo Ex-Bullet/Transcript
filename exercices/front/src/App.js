@@ -3,9 +3,6 @@ import Axios from "axios";
 import React, { useEffect, useState } from "react";
 import "tailwindcss/tailwind.css";
 import Counter from "./Counter";
-// import Table from "./table";
-import './index.css';
-
 
 function App() {
   const [words, setWords] = useState(false);
@@ -51,7 +48,7 @@ function App() {
     <>
       {display() && (
         <div className="App">
-          {/* <header className="App-header"> */}
+          <header className="App-header">
             <div className="container mx-auto">
               <p>
                 {wordsTimestamp.length <= 0 ? (
@@ -75,11 +72,30 @@ function App() {
               </p>
             </div>
             <Counter />
-           
-          {/* </header> */}
-          {/* <Table /> */}
+          </header>
         </div>
       )}
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Word</th>
+            <th scope="col">Start</th>
+            <th scope="col">Stop</th>
+          </tr>
+        </thead>
+        <tbody>
+          {words.map((line, i) => {
+            return (
+              <tr>
+                <td>{line.Mot} </td>
+                <td>{line.start} </td>
+                <td>{line.end} </td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
     </>
   );
 }

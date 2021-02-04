@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "tailwindcss/tailwind.css";
 
 function Counter() {
   const [count, setCount] = useState(0);
@@ -20,7 +19,7 @@ function Counter() {
 
   return (
     <div>
-      <p>{count}</p>
+      <p>Compteur : {count}</p>
       <input
         class="shadow appearance-none border rounded py-2 px-3 text-grey-darker"
         onKeyDown={(event) => onKeyDown(event)}
