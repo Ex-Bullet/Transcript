@@ -18,12 +18,12 @@ function Counter() {
   };
 
   return (
-    <div>
+    <div className="counter">
       <p>Compteur : {count}</p>
       <input
-        class="shadow appearance-none border rounded py-2 px-3 text-grey-darker"
-        onKeyDown={(event) => onKeyDown(event)}
-      ></input>
+        className="shadow appearance-none border rounded py-2 px-3 text-grey-darker"
+        onKeyDown={(event) => onKeyDown(event)}>
+      </input>
     </div>
   );
 }

@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 
 const fs = require("fs");
-const obj = JSON.parse(fs.readFileSync("./transcript.json", "utf8"));
+const obj = JSON.parse(fs.readFileSync("../transcript.json", "utf8"));
 const Timestamps = [5.99, 12.7, 37.5];
 
 function compare(time1, time2) {

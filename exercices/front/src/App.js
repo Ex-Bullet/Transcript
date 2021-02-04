@@ -73,30 +73,29 @@ function App() {
             </div>
             <Counter />
           </header>
+          <table className="table">
+            <thead>
+            <tr>
+              <th scope="col">Word</th>
+              <th scope="col">Start</th>
+              <th scope="col">Stop</th>
+            </tr>
+            </thead>
+            <tbody>
+            {words.map(( line ) => {
+              return (
+                <tr>
+                  <td>{line.Mot}</td>
+                  <td>{line.start}</td>
+                  <td>{line.end}</td>
+                </tr>
+              );
+            })}
+            </tbody>
+          </table>
         </div>
       )}
-
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">Word</th>
-            <th scope="col">Start</th>
-            <th scope="col">Stop</th>
-          </tr>
-        </thead>
-        <tbody>
-          {words.map((line, i) => {
-            return (
-              <tr>
-                <td>{line.Mot} </td>
-                <td>{line.start} </td>
-                <td>{line.end} </td>
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
-    </>
+      </>
   );
 }
 
