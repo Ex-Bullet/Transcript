@@ -1,6 +1,7 @@
-# Transcript
+## Made in ReactJS & NodeJS
 
-## Réalisé en ReactJS & NodeJS
-#### -Trier un fichier transcript.json selon les séquences des mots
-#### -Créer une api nodejs et afficher en front les transcriptions.
-#### -Compteur qui s'incrémente en tapant sur le clavier et décrémente en effacant.
+#### -Sort a transcript.json file by word sequences
+
+#### -Create a nodejs api and display the transcripts on the front.
+
+#### -Counter that increments when typing on the keyboard and decrements when deleting.
