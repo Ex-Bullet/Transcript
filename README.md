@@ -2,9 +2,18 @@
 
 -Sort a transcript.json file by word sequences
 
--Create a nodejs api and display the transcripts on the front.
+-Nodejs api, display the transcripts on front.
 
--Counter that increments when typing on the keyboard and decrements when deleting.
+-Counter that increments when typing and decrements on delete.
 
-front -> npm install -> npm run dev
-back -> npm install -> nodemon server.js
+cd /front
+```bash
+  npm install
+  yarn dev
+```
+
+cd /back
+```bash
+  npm install
+  nodemon server.js
+```
