@@ -5,3 +5,6 @@
 -Create a nodejs api and display the transcripts on the front.
 
 -Counter that increments when typing on the keyboard and decrements when deleting.
+
+front -> npm install -> npm run dev
+back -> npm install -> nodemon server.js
